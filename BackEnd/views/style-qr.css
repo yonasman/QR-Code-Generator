@@ -1,0 +1,32 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: #e0a52e;
+    text-align: center;
+}
+h1 {
+    margin: 20px 0;
+    color: rgb(12, 12, 12);
+}
+img {
+    margin-top: 40px;
+}
+
+a {
+    display: block;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    background-color: #000000;
+    /* padding: 6px 20px; */
+    height: 32px;
+    width: 240px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 25px;
+    margin: 20px auto;
+}

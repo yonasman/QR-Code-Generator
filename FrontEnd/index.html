@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>qr-code generator</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="shortcut icon" href="./images/qr-code-fav.png" type="image/x-icon">
+</head>
+<body>
+    <div class="content-wrapper">
+        <h1>QR CODE GENERATOR</h1>
+        <form action="/generate" method="post">
+            <input type="url" id="url" name="url" placeholder="Enter your URL" required>
+            <button type="submit" class="submit">Generate</button>
+        </form>
+    </div>
+</body>
+</html>
