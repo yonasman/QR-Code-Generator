@@ -4,17 +4,20 @@ import qr from 'qr-image';
 import fs from 'fs';
 import path from "path"
 import { fileURLToPath } from "url";
+import cors from "cors"
 // initialize the server
 const app = express();
 const PORT = 2000;
 
-
+// allow cors
+app.use(cors())
 // generating absolute path(Es module) and converting filepath to url path
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
 // middleware to parse input data
 app.use(bodyParser.urlencoded({extended: true}));
+app.use(bodyParser.json())
 
 // middleware to serve static file
 app.use(express.static("../FrontEnd"))
